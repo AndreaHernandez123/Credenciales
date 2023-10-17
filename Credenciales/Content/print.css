@@ -1,0 +1,31 @@
+﻿/* Estilo para la impresión */
+/*@media print {*/
+    /* Ejemplo: Reducir el tamaño de fuente para imprimir */
+    /*body {
+        font-size: 12px;
+    }*/
+
+    /* Ejemplo: Eliminar elementos no esenciales */
+    /*.elemento-a-ocultar {
+        display: none;
+    }*/
+
+    /* Ejemplo: Configurar los márgenes para la impresión */
+    /*@page {
+        margin: 1cm;
+    }
+
+    .pdf-button {
+        display: none;*/ /* Esto debe ocultar el botón de descarga del PDF */
+    /*}
+
+    #navbar {
+        display: none;
+    }
+}*/
+@media print {
+    /* Ocultar el botón solo en la versión impresa */
+    .pdf-button {
+        display: none;
+    }
+}

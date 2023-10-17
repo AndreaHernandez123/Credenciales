@@ -1,0 +1,58 @@
+﻿@model Credenciales.Models.DatosCredencialViewModel
+
+@{
+    ViewBag.Title = "CredencialRhpay";
+}
+<style type="text/css" media="print">
+    #navbar {
+        display: none !important; /* Oculta la barra de navegación */
+    }
+
+    .pdf-button {
+        display: none !important; /* Oculta el botón de generación de PDF */
+    }
+</style>
+<div class="d-grid">
+    <br />
+    <h2 class=" arearhpay" style="font-weight: bolder">RH PAY</h2>
+
+    <div class="card-container vh-100">
+        <div class="card card-image bg-credencial-rh">
+
+            <label>N. @Model.numemp</label>
+            <br />
+            <div class="image-upload-container">
+                <input type="file" name="FotografiaFile" id="file-input" accept="image/*">
+                <div class="image-preview mov">
+                    <img style="margin: auto" src="@Url.Content(Model.fotografia)" alt="Image" class="show" />
+                </div>
+            </div>
+            <div class="letterdatcontact d-grid">
+                <label>@Model.nombre </label>
+                <label>@Model.area </label>
+                <label> @Model.telefono </label>
+                <label> @Model.whatsapp </label>
+                <label> @Model.correo</label>
+                @*<label class="fas fa-phone "> @Model.telefono </label>
+                    <label class="fab fa-whatsapp" style="font-weight:bolder;"> @Model.whatsapp </label>
+                    <label class="fas fa-envelope"> @Model.correo</label>*@
+            </div>
+        </div>
+        <div class="card card-image bg-cred-rh-rev">
+
+            <div class="contenedor arearhpay" style="font-weight: bolder">
+                <label>@Model.area </label>
+            </div>
+            <div class="contenedor">
+                <img src="@Model.qrCodeImage" alt="Código QR" style="height: 186px; margin: 2px 2px 2px 35px" />
+            </div>
+            <div class="contenedor  lettername" style="line-height: 30px; margin-top: 23px; font-weight: bolder">
+                <label>@Model.nombre </label>
+            </div>
+        </div>
+    </div>
+    <button onclick="location.href='@Url.Action("GenerarPDF", "Principal")'" class="btn text-white btn-success btn-lg m-1 mb-1 btn-costume">DESCARGAR</button>
+</div>
+
+
+

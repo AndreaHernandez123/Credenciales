@@ -1,0 +1,15 @@
+﻿@model List<Credenciales.Models.DatosCredencialViewModel>
+
+@{
+    ViewBag.Title = "Consulta";
+}
+
+    <div class="d-flex align-items-center justify-content-center vh-100 ">
+
+        @using (Html.BeginForm("ConsultarEmpleados", "Principal", FormMethod.Post, new { @Class = "form-sh shadow"  }))
+        {
+            <input name="numemp" placeholder="Num. Empleado" class="mb-2">
+             <br />
+            <input value="Buscar" class="btn btn-primary" type="submit">
+        }
+    </div>

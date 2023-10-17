@@ -1,0 +1,434 @@
+﻿
+.body-content {
+    margin-top: 0px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 30px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 250px;
+}
+
+input[type = file ]{
+    display: none;
+}
+
+.content {
+    width: 25%;
+    background-color: #5064a4;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.selectd select {
+    width: 90%;
+    border-radius: 7px;
+}
+.contenedor {
+    /*background-color: rgba(255, 255, 255, 0.7);*/ /* Fondo semi-transparente para que se vea la imagen debajo */
+    padding: 0rem; /* Espacio interno dentro del div */
+    width: 16rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 87vh;
+    width: 63vh;
+    align-items: center;
+}
+.btn-largo {
+    width: 250px; 
+}
+.my-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .my-button:hover {
+        background-color: #45a049;
+    }
+
+    .my-button:active {
+        background-color: #3e8e41;
+    }
+
+.login {
+    backdrop-filter: blur(48px);
+    border-radius: 2px;
+}
+    
+
+.card-image {
+    width: 337px;
+    height: 570px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1rem;
+    transition: 0.3s;
+    cursor: pointer;  
+    position: relative; /* Establece la posición relativa en el contenedor principal */
+
+}
+.alignfront {
+    margin: -3px -498px 5px -287px !important;
+}
+.aligntra {
+    margin: -575px 10px 36px 167px !important;
+    }
+.card {
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-fluid {
+    max-width: 60%;
+    height: auto;
+}
+.tamanio-creden{
+    max-width: 100%;
+}
+
+.content-cred {
+    display: flex;
+    height: 63.7vh;
+    width: 34.6vh;
+    flex-direction: column;
+    position: relative;
+}
+.lettername {
+    font-family: Arial;
+    font-size: 22px;
+/*    font-weight: bolder;
+*/    text-align: center;
+    line-height: 25px;
+}
+.letterarea {
+    font-family: Arial;
+    font-size: 30px;
+   text-align: center;
+    color: darkgreen;
+}
+.arearhpay {
+    font-family: Arial;
+    font-size: 34px;
+    //font-weight: bolder;
+    text-align: center;
+    color: #b72420;
+}
+.areacapital {
+    font-family: Arial;
+    font-size: 29px;
+    //font-weight: bolder;
+    text-align: center;
+    color: #093c71;
+}
+.areagn {
+    font-family: Arial;
+    font-size: 29px;
+    //font-weight: bolder;
+    text-align: center;
+    color: darkgreen;
+}
+.areatrafico {
+    font-family: Arial;
+    font-size: 34px;
+    //font-weight: bolder;
+    text-align: center;
+    color: #ec2126;
+}
+
+
+.letterdatcontact {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.fas.fa-phone {
+    font-size: 15px; 
+    color: #000; 
+    margin-right: 5px; 
+}
+.image-upload-container {
+    text-align: center;
+    position: relative;
+}
+
+.upload-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 90%;
+    padding: 22px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 150px;
+    height: 150px;
+}
+
+    .upload-button i {
+        font-size: 40px;
+    }
+
+#file-input {
+    display: none;
+}
+
+.image-preview {
+    border-radius: 90%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.contlogin {
+    background-color: #00000012 ;
+    color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.aligntextlog {
+    margin: 2px 2px 2px 173px;
+    width: 250px;
+}
+
+.movLogo {
+    line-height: 108px;
+    margin-top: -56px;
+}
+/* Oculta la barra de navegación y el botón al imprimir */
+.bg-index {
+    background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.input-custume{
+    border-radius: .5rem;
+    margin:.5rem;
+    width: 90%;
+}
+
+.bg-credencial {
+    background-image: url('../Areas/GN10-Del.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-cred-rev {
+    background-image: url('../Areas/GN10-Rev.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-credencial-cap {
+    background-image: url('../Areas/Capital-Del.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-cred-cap-rev {
+    background-image: url('../Areas/Capital-Rev.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-credencial-rh {
+    background-image: url('../Areas/Rhpay-Del.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-cred-rh-rev {
+    background-image: url('../Areas/Rhpay-Rev.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-credencial-traf {
+    background-image: url('../Areas/Trafico-Del.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-cred-traf-rev {
+    background-image: url('../Areas/Trafico-Rev.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d-grid label{
+    margin: .5rem;
+}
+.card-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.btn-costume {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+.form-sh {
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+@media (min-width: 200px) and (max-width: 380px) {
+    .card-image {
+        width: 292px;
+        height: 33rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin-left: 34px;
+    }
+
+    .card-container {
+        display: flex;
+        align-items: normal;
+        justify-content: normal;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 90%;
+    }
+}
+@media (min-width: 385px) and (max-width: 450px) {
+    .card-image {
+        width: 292px;
+        height: 33rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin-left: 57px;
+    }
+    .card-container {
+        display: flex;
+        align-items: normal;
+        justify-content: normal;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 90%;
+    }
+}
+
+@media (min-width: 4500px) and (max-width: 800px) {
+    .card-image {
+        width: 292px;
+        height: 33rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin-left: 35px;
+    }
+
+    .card-container {
+        display: flex;
+        align-items: normal;
+        justify-content: normal;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+
+    /*   .body-content {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 334px;
+        padding-top: 24px;
+    }
+
+    label {
+        width: 200px;
+    }*/
+
+    /*   .selectd select {
+        height: 33px;
+        width: 190px;
+        border-radius: 1px;
+    }*/
+
+    /*.content {
+        background-color: #1F3D72;
+        color: white;
+        padding: -2rem;
+        border-radius: 1rem;
+        text-align: center;
+        margin-bottom: 0rem;
+        margin: -3px 24px 5px 40px;
+    }
+
+    input, select, textarea {
+        max-width: 199px;
+    }
+
+    .body-content {
+        margin-top: 1px;
+        padding-left: 185px;
+        padding-right: 345px;
+        padding-top: 0px;
+    }*/
+}
+
+
+
+
+
+

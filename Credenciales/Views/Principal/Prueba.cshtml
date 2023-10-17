@@ -1,0 +1,14 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Prueba";
+    Layout = "Prueba";
+    string numemp = "5";
+
+}
+
+<h2>Prueba</h2>
+
+<img src="data:image/png;base64,@Model" alt="Código QR">
+<img src="@Url.Action("GenerarCodigoQR", "Principal", new { numemp })" alt="Código QR">
+

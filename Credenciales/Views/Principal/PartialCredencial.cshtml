@@ -1,0 +1,60 @@
+﻿@model Credenciales.Models.DatosCredencialViewModel
+
+@{
+    ViewBag.Title = "PartialCredencial";
+}
+
+<div class="card-container vh-100">
+
+    <div class="card card-image bg-credencial" style=" width: 332px; height: 570px;">
+        <div class="letterarea" style="margin-top:  50px">
+            <label>N. @Model.numemp</label>
+        </div>
+        <br />
+            <div class="image-upload-container" style="margin: -5px 2px 2px 78px;">
+                <input type="file" name="FotografiaFile" id="file-input" accept="image/*">
+                <div class="image-preview mov">
+                    <img style="margin: auto" src="@Url.Content(Model.fotografia)" alt="Image" class="show" />
+                </div>
+            </div>
+       
+        <div class="letterdatcontact d-grid" style="margin-top: 5px">
+            <div class="lettername">
+                <label>@Model.nombre </label>
+            </div>
+            <div style="">
+                <div class="letterarea">
+                    <label>@Model.area </label>
+                </div>
+                <div>
+                    <label> @Model.telefono </label>
+                    <div>
+                        <label> @Model.whatsapp </label>
+                    </div>
+                    <label> @Model.correo</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="card card-image bg-cred-rev" style="margin: -600px 2px 2px 400px; width: 332px; height: 570px; ">
+        <div style="margin: 100px 2px 2px 40px">
+            <div class="contenedor letterarea" style="font-weight: bolder">
+                <label>@Model.area </label>
+            </div>
+            <div class="contenedor">
+                <img src="@Model.qrCodeImage" alt="Código QR" style="height: 186px; margin: 2px 2px 2px 35px" />
+            </div>
+            <div class="contenedor  lettername" style="line-height: 30px; margin-top: 23px; font-weight: bolder">
+                <label>@Model.nombre </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .navbar {
+        display: none; /* Oculta la barra de navegación */
+    }
+</style>
+

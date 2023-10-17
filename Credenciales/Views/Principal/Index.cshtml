@@ -1,0 +1,114 @@
+﻿@model Credenciales.Models.RegistraEmplsViewModel
+@{
+    ViewBag.Title = "Index";
+
+}
+
+@Html.ValidationSummary()
+<div class="d-flex justify-content-center align-items-center vh-100">
+    @using (Html.BeginForm("RegistrarEmpl", "Principal", FormMethod.Post, new { enctype = "multipart/form-data", @class = "content"}))
+    {
+            <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+            <span class="h1 fw-bold mb-0">CREDENCIALES</span>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.nombre, "Nombre")
+                <br />
+                @Html.TextBoxFor(model => model.nombre, new { @class = "input-custume" })
+                @Html.ValidationMessageFor(model => model.nombre)
+            </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.numemp, "Num. Empleado")
+            <br />
+            @Html.TextBoxFor(model => model.numemp, new { @class = "input-custume" })
+            @Html.ValidationMessageFor(model => model.numemp)
+        </div>
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.area)
+                @Html.TextBoxFor(model => model.area, new { @class = "input-custume" })
+                @Html.ValidationMessageFor(model => model.area)
+            </div>*@
+        <div class="form-group ">
+            @Html.LabelFor(model => model.area,"Area", htmlAttributes: new { @class = "control-label col-md-2 " })
+            <div class="selectd">
+                @Html.DropDownListFor(model => model.area, new List<SelectListItem>
+       { new SelectListItem{Text="GN 10", Value="GN10"},
+       new SelectListItem{Text="CAPITAL PEOPLE", Value="CAPITAL PEOPLE"},
+       new SelectListItem{Text="TRAFICO", Value="TRAFICO"},
+       new SelectListItem{Text="RH PAY", Value="RH PAY"}}, "Seleccionar Area")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.telefono, "Telefono")
+            <br />
+            @Html.TextBoxFor(model => model.telefono, new { @class = "input-custume" })
+            @Html.ValidationMessageFor(model => model.telefono)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.whatsapp, "Whatsapp")
+            <br />
+            @Html.TextBoxFor(model => model.whatsapp, new { @class = "input-custume" })
+            @Html.ValidationMessageFor(model => model.whatsapp)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.correo, "Correo electrónico")
+            <br />
+            @Html.TextBoxFor(model => model.correo, new { @class = "input-custume" })
+            @Html.ValidationMessageFor(model => model.correo)
+        </div>
+        @Html.LabelFor(model => model.foto, "Fotografia")
+        <span class="input-file-ine">
+            @Html.TextBoxFor(model => model.foto, new { type = "file", @multiple = "multiple", @class = "input-file-input", id = "input-file-ine", required = "required" })
+        </span>
+        <div class="input_file">
+            <label for="input-file-ine" class="input-file-btn btn btn-primary">
+                <span id="file-name-ine">
+                    Seleccionar archivo
+                </span>
+            </label>
+        </div>
+        <br />
+        <div class="pt-1 mb-4">
+            <button class="btn btn-success btn-lg" type="submit">Guardar</button>
+        </div>
+
+
+    }
+
+</div>
+@section scripts
+    {
+    <script>
+        $(document).ready(function () {
+
+            $('input[type=file]').change(function () {
+                var filename = $(this).val().split('\\').pop();
+                var idname = $(this).attr('id');
+                $('span.' + idname).next().find('span').html(filename);
+            });
+
+
+            function validarLongitudCampo(campoId, longitudEsperada, namecampo) {
+                const valorCampo = $(campoId).val();
+
+
+
+                if (valorCampo.length !== longitudEsperada) {
+                    alert(`El campo ${namecampo} debe ser igual a ${longitudEsperada} caracteres`)
+                }
+            }
+            $("#telefono").change(function () {
+                validarLongitudCampo("#telefono", 10, "TELEFONO");
+            });
+            $("#whatsapp").change(function () {
+                validarLongitudCampo("#whatsapp", 10, "WHATSAPP");
+            });
+
+        });
+    </script>
+}
+
+
+
+
